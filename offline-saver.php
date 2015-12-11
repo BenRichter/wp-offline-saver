@@ -15,7 +15,7 @@
  * @wordpress-plugin
  * Plugin Name:       Offline Saver
  * Plugin URI:        https://github.com/BenRichter/wp-offline-saver
- * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
+ * Description:       Never lose your edits again by saving posts local or in browser cache if network connection is lost.
  * Version:           1.0.0
  * Author:            Ben Richter
  * Author URI:        https://github.com/BenRichter

@@ -100,4 +100,31 @@ class Offline_Saver_Admin {
 
 	}
 
+
+	/**
+	 * Add an options page under the Settings submenu
+	 *
+	 * @since  1.0.0
+	 */
+	public function add_options_page() {
+
+		$this->plugin_screen_hook_suffix = add_options_page(
+			__( 'Offline Saver Settings', 'offline-saver' ),
+			__( 'Offline Saver', 'offline-saver' ),
+			'manage_options',
+			$this->plugin_name,
+			array( $this, 'display_options_page' )
+		);
+
+	}
+
+	/**
+	 * Render the options page for plugin
+	 *
+	 * @since  1.0.0
+	 */
+	public function display_options_page() {
+		include_once 'partials/offline-saver-admin-display.php';
+	}
+
 }
